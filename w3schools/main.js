@@ -1,16 +1,16 @@
 var myGamePiece;
 
 function startGame(){    //this invokes the method of the myGameArea object
-    myGameArea.start();
     myGamePiece = new component(30, 30, "blue", 10, 120);
+    myGameArea.start();
 };
 
 
 var myGameArea = {
     canvas: document.createElement("canvas"),
     start: function (){                 // The start() method creates a <canvas>
-        this.canvas.width = 480;        // element and inserts it as the first 
-        this.canvas.height = 270;       // childnode of the <body> element
+        this.canvas.width = width;        // element and inserts it as the first 
+        this.canvas.height = heigth;       // childnode of the <body> element
         this.ctx = canvas.getContext("2d");
         document.body.insertBefore(this.canvas,
             document.body.childNodes[0]);
@@ -41,8 +41,5 @@ function updateGameArea(){
     myGamePiece.update();
 };
 
-
-
-window.addEventListener('load', main);
 
 startGame();

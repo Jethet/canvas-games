@@ -1,6 +1,7 @@
 
 html {
     box-sizing: border-box;
+    overflow: hidden;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -14,9 +15,6 @@ html {
 #canvas {
     background-color: aliceblue;
     border: 2px solid blue;
-    margin: 100px 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+    margin-right: 150px;
+    margin-left:  150px;
 }
