@@ -1,10 +1,20 @@
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
-ctx.fillStyle = "#purple";
-ctx.fillRect(0, 0, 150, 75);
+// var canvas = document.getElementById("canvas");
+// var ctx = canvas.getContext("2d");
 
-ctx.fillStyle = 'rgb(200, 0, 0)';
-ctx.fillRect(10, 10, 50, 50);
+function startGame(){    //this invokes the method of the myGameArea object
+    myGameArea.start();
+}
 
-ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
-ctx.fillRect(30, 30, 50, 50);
+
+window.addEventListener('load', main);
+
+var myGameArea = {
+    canvas: document.getElementById("canvas"),
+    start: function (){
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = canvas.getContext("2d");
+        document.body.insertBefore(this.canvas,
+            document.body.childNodes[0];
+    }
+}
