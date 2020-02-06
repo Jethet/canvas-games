@@ -1,7 +1,9 @@
 var myGamePiece;
+var mySecondPiece;
 
 function startGame(){    //this invokes the method of the myGameArea object
     myGamePiece = new component(30, 30, "blue", 10, 120);
+    mySecondPiece = new component(140, 10, "red", 10, 120);
     myGameArea.start();
 };
 
@@ -39,6 +41,8 @@ function updateGameArea(){
     myGameArea.clear();
     myGamePiece.x += 1;
     myGamePiece.update();
+    mySecondPiece.x += 1;
+    mySecondPiece.update();
 };
 
 
